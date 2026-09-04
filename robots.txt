@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bexruz410247.github.io/sitemap.xml
