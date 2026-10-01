@@ -37,7 +37,7 @@
   "alternateName": "Behruzbek Hasanboyev",
   "url": "https://bexruz410247.github.io/",
   "image": "https://bexruz410247.github.io/og-image.jpg",
-  "jobTitle": "Grafik dizayner va video montajchi",
+  "jobTitle": "Designer & Motion Creator",
   "email": "mailto:behruzbekhasanboyev31@gmail.com",
   "address": {
     "@type": "PostalAddress",
@@ -46,7 +46,7 @@
     "addressCountry": "UZ"
   },
   "knowsAbout": ["Logotip dizayn","Brending","SMM dizayn","Instagram post dizayn","Banner dizayn","Video montaj","Adobe Photoshop","Adobe Illustrator","Figma","Premiere Pro","After Effects"],
-  "sameAs": ["https://t.me/FIN_PORTOFOLIO","https://t.me/FIN_BEXRUZ"]
+  "sameAs": ["https://t.me/FIN_PORTOFOLIO","https://t.me/FIN_PORTOFOLIO2","https://t.me/FIN_MOTION","https://t.me/FIN_BEXRUZ","https://www.instagram.com/fin.motionn/","https://t.me/FIN_PEREXADNIK"]
 }
 </script>
 <script type="application/ld+json">
@@ -70,14 +70,14 @@
 
 <style>
 :root{color-scheme:dark}
-html,body{margin:0;padding:0;background:#071A3E}
+html,body{margin:0;padding:0;background:#060E22}
 img{max-width:100%}
 [hidden]:not([hidden=until-found]){display:none!important}
 </style>
 </head>
 <body>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 
 <style>
 /* ═════ TOKENS — ko‘k gradient + lime ═════ */
@@ -96,23 +96,29 @@ img{max-width:100%}
   --ink3:rgba(255,255,255,.56);
 
   --edge:clamp(18px,4.6vw,72px);
-  --display:"Poppins",system-ui,sans-serif;
+  --display:"Inter Tight","Inter",system-ui,sans-serif;
   --body:"Inter",system-ui,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
   --shadow:0 30px 70px -28px rgba(2,10,30,.9);
+  --surface:#0C1834; --surface-2:#11203F;
+  --line:rgba(255,255,255,.1); --line-2:rgba(255,255,255,.2);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   margin:0;color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;
   -webkit-font-smoothing:antialiased;overflow-x:hidden;
-  background:#071A3E;
-  background-image:linear-gradient(180deg,
-    #071A3E 0%, #0B2C6E 14%, #114FA8 30%, #1668D8 44%,
-    #0F3F8E 60%, #0A2757 76%, #061530 90%, #050E22 100%);
+  background:#060E22;
+  background-image:
+    radial-gradient(90% 50% at 50% 0%, rgba(22,104,216,.38) 0%, transparent 70%),
+    radial-gradient(60% 40% at 100% 55%, rgba(22,104,216,.14) 0%, transparent 70%),
+    radial-gradient(60% 40% at 0% 85%, rgba(62,151,236,.10) 0%, transparent 70%);
   background-repeat:no-repeat;
 }
-h1,h2,h3{font-family:var(--display);margin:0;line-height:1.06;letter-spacing:-.035em;font-weight:700;text-wrap:balance}
+body::after{content:"";position:fixed;inset:0;z-index:500;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--lime);color:var(--on-lime)}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:-.04em;font-weight:700;text-wrap:balance}
 p{margin:0}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
@@ -124,7 +130,7 @@ img{display:block;max-width:100%}
 /* ═════ NAV ═════ */
 .nav{position:fixed;inset:0 0 auto;z-index:300;display:flex;align-items:center;gap:16px;
   padding:18px var(--edge);border-bottom:1px solid transparent;transition:.35s}
-.nav.on{background:rgba(6,20,50,.72);backdrop-filter:blur(18px);padding-block:12px;border-bottom-color:var(--stroke)}
+.nav.on{background:rgba(6,14,34,.7);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);padding-block:11px;border-bottom-color:var(--line)}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:15.5px}
 .logo .mark{width:32px;height:32px;flex:none;display:block;border-radius:9px;overflow:hidden;
   box-shadow:0 0 0 1px rgba(255,255,255,.16)}
@@ -195,9 +201,9 @@ img{display:block;max-width:100%}
 .cc{flex:none;border-radius:19px;padding:15px;display:flex;flex-direction:column;justify-content:space-between;
   gap:9px;background:#fff;color:#06101F;box-shadow:0 22px 48px -16px rgba(3,16,50,.55);overflow:hidden;
   text-align:left;border:0;font:inherit}
-.cc .k{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:-.045em;line-height:1}
-.cc .l{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#5B6472;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cc .k{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:-.045em;line-height:1}
+.cc .l{font-family:var(--mono);font-size:9px;line-height:1.35;letter-spacing:.08em;text-transform:uppercase;color:#5B6472;
+  white-space:normal;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .cc img{width:100%;flex:1;min-height:0;object-fit:cover;border-radius:12px;transition:transform .6s cubic-bezier(.19,1,.22,1)}
 .shot-cc{cursor:pointer;transition:transform .45s cubic-bezier(.19,1,.22,1),box-shadow .45s}
 .shot-cc:hover{transform:translateY(-8px);box-shadow:0 30px 60px -18px rgba(3,16,50,.7)}
@@ -221,7 +227,7 @@ img{display:block;max-width:100%}
 .badge i{width:7px;height:7px;border-radius:50%;background:var(--lime);animation:bl 1.7s infinite}
 @keyframes bl{50%{opacity:.2}}
 .badge span{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:#fff}
-.hero h1{font-size:clamp(36px,6.6vw,78px);font-weight:800;letter-spacing:-.05em;margin:20px 0 0;
+.hero h1{font-size:clamp(38px,7vw,88px);font-weight:700;letter-spacing:-.055em;margin:20px 0 0;
   line-height:1.03;max-width:16ch}
 .hero h1 .g{color:var(--lime)}
 .hero .role{font-family:var(--mono);font-size:clamp(10px,1.3vw,12.5px);letter-spacing:.2em;
@@ -238,142 +244,214 @@ img{display:block;max-width:100%}
 .btn-o{border:1px solid var(--stroke-2);padding:13px 21px;background:rgba(255,255,255,.1);color:#fff;backdrop-filter:blur(6px)}
 .btn-o:hover{background:rgba(255,255,255,.18);border-color:var(--lime);color:var(--lime);transform:translateY(-2px)}
 
-/* ═════ STATS ═════ */
-.stats{margin-top:clamp(40px,5vw,68px)}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.stat{padding:26px 22px;border-radius:20px;background:var(--glass);border:1px solid var(--stroke);
-  backdrop-filter:blur(12px);transition:border-color .3s,transform .45s cubic-bezier(.19,1,.22,1)}
-.stat:hover{border-color:var(--lime);transform:translateY(-4px)}
-.stat .n{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.6vw,44px);letter-spacing:-.045em;line-height:1;color:var(--lime)}
-.stat .l{color:var(--ink3);font-size:13px;margin-top:6px}
-@media(max-width:780px){.stats .wrap{grid-template-columns:1fr 1fr}}
+/* ═════ STATS — tahririy qator ═════ */
+.stats{margin-top:clamp(30px,4vw,52px)}
+.st-row{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}
+.stat{padding:clamp(22px,3vw,36px) clamp(12px,2vw,28px)}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat .n{font-family:var(--display);font-weight:600;font-size:clamp(42px,5.6vw,76px);letter-spacing:-.06em;line-height:.9;color:#fff}
+.stat .n span{color:var(--lime)}
+.stat .l{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-top:14px}
+@media(max-width:780px){.st-row{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* ═════ YUGURUVCHI YOZUV ═════ */
+.ticker{overflow:hidden;border-block:1px solid var(--line);padding:clamp(16px,2vw,24px) 0;margin-top:clamp(56px,7vw,100px);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker .tr{display:flex;width:max-content;animation:tk 38s linear infinite}
+.ticker span{display:flex;align-items:center;gap:.45em;padding-right:.45em;white-space:nowrap;
+  font-family:var(--display);font-weight:700;font-size:clamp(34px,6vw,86px);letter-spacing:-.05em;line-height:1.05}
+.ticker span:nth-child(even){color:transparent;-webkit-text-stroke:1.2px rgba(255,255,255,.42)}
+.ticker b{color:var(--lime);font-size:.5em;font-weight:400}
+@keyframes tk{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.ticker .tr{animation:none}}
 
 /* ═════ SECTION ═════ */
-.sec{padding-block:clamp(64px,8vw,116px)}
-.head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:32px}
-.head .k{display:flex;align-items:center;gap:10px;color:var(--lime);margin-bottom:12px}
-.head .k::before{content:"";width:24px;height:1px;background:currentColor}
-.head h2{font-size:clamp(28px,4.6vw,52px);font-weight:800;letter-spacing:-.045em}
-.head p{color:var(--ink2);max-width:400px;font-size:14.5px}
+.sec{padding-block:clamp(72px,9vw,128px)}
+.head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:20px 40px;margin-bottom:clamp(30px,4vw,52px)}
+.head .k{display:flex;align-items:center;gap:10px;color:var(--lime);margin-bottom:16px}
+.head .k::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.head h2{font-size:clamp(40px,6.6vw,92px);font-weight:700;letter-spacing:-.06em;line-height:.92}
+.head p{color:var(--ink2);max-width:340px;font-size:15px;padding-bottom:6px}
+@media(max-width:760px){.head{grid-template-columns:1fr}}
 
 /* ═════ FILTERS ═════ */
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:clamp(22px,3vw,34px)}
 .filters button{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
-  padding:10px 15px;border-radius:100px;border:1px solid var(--stroke);color:var(--ink2);
-  background:var(--glass);backdrop-filter:blur(8px);transition:.24s}
-.filters button:hover{border-color:var(--stroke-2);color:#fff}
-.filters button.on{background:var(--lime);border-color:var(--lime);color:var(--on-lime);font-weight:700}
+  padding:11px 17px;border-radius:100px;border:1px solid var(--line-2);color:var(--ink2);transition:.24s}
+.filters button:hover{border-color:#fff;color:#fff}
+.filters button.on{background:#fff;border-color:#fff;color:var(--on-lime);font-weight:700}
 
 /* ═════ CARDS ═════ */
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{border-radius:22px;overflow:hidden;background:var(--glass);border:1px solid var(--stroke);
-  backdrop-filter:blur(12px);display:flex;flex-direction:column;cursor:pointer;
-  transition:border-color .3s,transform .5s cubic-bezier(.19,1,.22,1),box-shadow .5s,background .3s}
-.card:hover,.card:focus-visible{border-color:var(--lime);background:var(--glass-2);transform:translateY(-6px);box-shadow:var(--shadow)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(30px,3vw,44px) clamp(14px,1.6vw,22px)}
+.card{display:flex;flex-direction:column;gap:16px;cursor:pointer;border-radius:22px}
 .card.hide{display:none}
-.shot{position:relative;aspect-ratio:4/3;overflow:hidden;background:rgba(5,18,48,.45)}
-.shot img{width:100%;height:100%;object-fit:cover;transition:transform .85s cubic-bezier(.19,1,.22,1)}
-.card:hover .shot img{transform:scale(1.07)}
+.grid{grid-auto-flow:row dense}
+.card.wide{grid-column:span 2}
+.card.wide .shot{aspect-ratio:auto;flex:1 1 0;min-height:260px}
+.card.wide .shot>img{display:none}
+.trio{position:absolute;inset:0;z-index:1;display:flex;gap:12px;justify-content:center;align-items:center;padding:20px;overflow:hidden}
+.shot .trio img{height:100%;width:auto;max-width:none;flex:none;object-fit:cover;z-index:auto;border-radius:12px;box-shadow:0 20px 40px -18px rgba(0,0,0,.7);
+  transition:transform .8s cubic-bezier(.19,1,.22,1)}
+.card:hover .shot .trio img{transform:translateY(-6px)}
+.card:hover .shot .trio img:nth-child(even){transform:translateY(6px)}
+@media(max-width:1000px){.card.wide .shot{aspect-ratio:16/9;flex:none;min-height:0}.shot .trio img:nth-child(n+4){display:none}}
+@media(max-width:620px){.card.wide{grid-column:auto}.card.wide .shot{aspect-ratio:4/3}.card.wide .shot>img{display:block}.trio{display:none}}
+.shot{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:22px;border:1px solid var(--line);
+  background:var(--surface) center/cover no-repeat;transition:border-color .4s}
+.shot::before{content:"";position:absolute;inset:0;z-index:0;backdrop-filter:blur(26px) brightness(.55) saturate(1.2);-webkit-backdrop-filter:blur(26px) brightness(.55) saturate(1.2)}
+.shot img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transition:transform 1s cubic-bezier(.19,1,.22,1)}
+.card:hover .shot,.card:focus-visible .shot{border-color:rgba(203,251,69,.6)}
+.card:hover .shot img{transform:scale(1.045)}
 .kind,.count{position:absolute;z-index:2;font-family:var(--mono);font-size:9px;letter-spacing:.13em;
-  text-transform:uppercase;background:rgba(5,14,34,.72);border:1px solid var(--stroke);
-  color:#fff;padding:6px 10px;border-radius:100px;backdrop-filter:blur(6px)}
-.kind{top:12px;left:12px}
-.count{top:12px;right:12px}
-.open{position:absolute;inset:0;z-index:3;display:grid;place-items:center;opacity:0;
-  background:rgba(6,24,64,.5);backdrop-filter:blur(2px);transition:opacity .35s}
-.card:hover .open,.card:focus-visible .open{opacity:1}
-.open span{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;
-  background:var(--lime);color:var(--on-lime);padding:11px 19px;border-radius:100px;
-  transform:translateY(9px);transition:transform .45s cubic-bezier(.19,1,.22,1)}
-.card:hover .open span{transform:none}
-.info{padding:18px 19px 20px;display:flex;flex-direction:column;gap:7px}
-.info h3{font-size:19px;letter-spacing:-.025em;transition:color .3s}
-.card:hover .info h3{color:var(--lime)}
-.info p{font-size:13.5px;color:var(--ink3);line-height:1.55}
-.tools{display:flex;gap:6px;flex-wrap:wrap;margin-top:3px}
+  text-transform:uppercase;background:rgba(5,12,28,.62);border:1px solid rgba(255,255,255,.14);
+  color:#fff;padding:6px 10px;border-radius:100px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.kind{top:14px;left:14px}
+.count{top:14px;right:14px}
+.open{position:absolute;inset:auto 14px 14px auto;z-index:3;opacity:0;transform:translateY(10px);
+  transition:opacity .35s,transform .45s cubic-bezier(.19,1,.22,1)}
+.card:hover .open,.card:focus-visible .open{opacity:1;transform:none}
+.open span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;
+  background:var(--lime);color:var(--on-lime);padding:11px 17px;border-radius:100px}
+.info{display:grid;grid-template-columns:1fr auto;gap:6px 16px;padding:0 4px}
+.info h3{font-size:clamp(20px,1.7vw,24px);letter-spacing:-.035em;font-weight:600;transition:color .3s}
+.info::after{content:"\2197";grid-column:2;grid-row:1;width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);
+  display:grid;place-items:center;font-size:14px;color:#fff;transition:.4s cubic-bezier(.19,1,.22,1)}
+.card:hover .info::after{background:var(--lime);border-color:var(--lime);color:var(--on-lime);transform:rotate(45deg)}
+.info p{grid-column:1/-1;font-size:14px;color:var(--ink3);line-height:1.55;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tools{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
 .tools span{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--ink2);border:1px solid var(--stroke);padding:5px 9px;border-radius:100px}
+  color:var(--ink3);padding:4px 0;margin-right:8px}
+.tools span+span::before{content:"/";margin-right:12px;color:var(--line-2)}
 @media(max-width:1000px){.grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.grid{grid-template-columns:1fr}}
 
-/* ═════ MONTAJ — SOON ═════ */
-.soon{position:relative;border:1.5px dashed var(--stroke-2);border-radius:26px;
-  background:var(--glass);backdrop-filter:blur(12px);
-  padding:clamp(38px,6vw,66px) clamp(22px,4vw,52px);overflow:hidden;text-align:center}
-.soon::before{content:"";position:absolute;inset:0;pointer-events:none;
-  background:repeating-linear-gradient(135deg,rgba(203,251,69,.06) 0 14px,transparent 14px 28px)}
-.soon .k{justify-content:center}
-.soon .strike{position:relative;display:inline-block}
-.soon h2{font-size:clamp(30px,7vw,80px);font-weight:800;letter-spacing:-.05em;color:rgba(255,255,255,.42);text-transform:uppercase}
-.soon .strike::after{content:"";position:absolute;left:-4%;right:-4%;top:52%;height:clamp(3px,.7vw,7px);
-  background:var(--lime);border-radius:4px;transform:rotate(-6deg);transform-origin:center}
-.stamp{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:13px 24px;border-radius:100px;
-  border:2px solid var(--lime);color:var(--lime);font-family:var(--mono);font-weight:700;
-  font-size:clamp(12px,2vw,17px);letter-spacing:.28em;text-transform:uppercase;transform:rotate(-3deg)}
-.stamp i{width:9px;height:9px;border-radius:50%;background:var(--lime);animation:bl 1.6s infinite}
-.soon p{color:var(--ink2);max-width:430px;margin:22px auto 0;position:relative;font-size:14.5px}
+/* ═════ MONTAJ VA MOTION ═════ */
+.mo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.6vw,22px)}
+.mo-card{position:relative;overflow:hidden;min-height:clamp(300px,32vw,420px);border-radius:28px;
+  padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;justify-content:space-between;gap:28px;
+  background:var(--surface);border:1px solid var(--line);transition:transform .6s cubic-bezier(.19,1,.22,1),border-color .4s}
+.mo-card:hover{transform:translateY(-6px);border-color:var(--line-2)}
+.mo-card.lime{background:var(--lime);color:var(--on-lime);border-color:var(--lime)}
+.mo-card.blue{background:radial-gradient(120% 90% at 100% 0%,#3E97EC 0%,#1668D8 34%,#0A3FA8 70%,#082F86 100%);border-color:rgba(255,255,255,.18)}
+.mo-card::after{content:"";position:absolute;right:-18%;bottom:-38%;width:70%;aspect-ratio:1;border-radius:50%;
+  border:1px solid currentColor;opacity:.16;box-shadow:0 0 0 46px rgba(0,0,0,0),0 0 0 47px currentColor;pointer-events:none}
+.mo-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mo-top .mono{opacity:.72}
+.mo-play{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;flex:none;
+  background:var(--on-lime);color:var(--lime);transition:transform .6s cubic-bezier(.19,1,.22,1)}
+.mo-card.blue .mo-play{background:#fff;color:#0A3FA8}
+.mo-card:hover .mo-play{transform:scale(1.1)}
+.mo-card h3{font-size:clamp(34px,4.4vw,62px);font-weight:700;letter-spacing:-.055em;line-height:.95}
+.mo-card p{margin-top:12px;max-width:340px;font-size:15px;opacity:.8}
+.mo-go{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase}
+.mo-go i{font-style:normal;transition:transform .4s cubic-bezier(.19,1,.22,1)}
+.mo-card:hover .mo-go i{transform:translate(3px,-3px)}
+@media(max-width:760px){.mo{grid-template-columns:1fr}}
 
 /* ═════ XIZMATLAR ═════ */
-.svcs{border-top:1px solid var(--stroke);border-radius:0}
-.svc{display:grid;grid-template-columns:56px 1fr 1.3fr;gap:22px;align-items:center;padding:24px 6px;
-  border-bottom:1px solid var(--stroke);transition:padding .3s cubic-bezier(.19,1,.22,1),background .3s}
-.svc:hover{background:rgba(255,255,255,.06);padding-left:20px}
-.svc .n{font-family:var(--mono);font-size:11px;color:var(--lime)}
-.svc h3{font-size:clamp(19px,2.5vw,28px);letter-spacing:-.035em;transition:color .3s}
-.svc:hover h3{color:var(--lime)}
-.svc p{font-size:13.5px;color:var(--ink3)}
-@media(max-width:760px){.svc{grid-template-columns:44px 1fr;gap:6px 14px}.svc p{grid-column:2}}
+.svc-wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,96px);align-items:start}
+.svc-side{position:sticky;top:110px}
+.svc-side .k{display:flex;align-items:center;gap:10px;color:var(--lime);margin-bottom:16px}
+.svc-side .k::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.svc-side h2{font-size:clamp(40px,5.6vw,80px);font-weight:700;letter-spacing:-.06em;line-height:.92}
+.svc-side p{color:var(--ink2);max-width:340px;font-size:15px;margin:20px 0 28px}
+.svcs{border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:52px 1fr 40px;gap:18px;align-items:start;padding:clamp(22px,2.6vw,32px) 0;
+  border-bottom:1px solid var(--line);transition:padding .45s cubic-bezier(.19,1,.22,1)}
+.svc:hover{padding-left:12px}
+.svc .n{font-family:var(--mono);font-size:11px;color:var(--ink3);padding-top:9px;transition:color .3s}
+.svc h3{font-size:clamp(22px,2.4vw,32px);font-weight:600;letter-spacing:-.04em;transition:color .3s}
+.svc p{font-size:14.5px;color:var(--ink3);margin-top:8px;max-width:440px}
+.svc i{font-style:normal;width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;
+  font-size:14px;transition:.45s cubic-bezier(.19,1,.22,1)}
+.svc:hover h3,.svc:hover .n{color:var(--lime)}
+.svc:hover i{background:var(--lime);border-color:var(--lime);color:var(--on-lime);transform:rotate(45deg)}
+@media(max-width:900px){.svc-wrap{grid-template-columns:1fr}.svc-side{position:static}}
+@media(max-width:520px){.svc{grid-template-columns:34px 1fr}.svc i{display:none}}
 
 /* ═════ ABOUT ═════ */
-.about{display:grid;grid-template-columns:230px 1fr;gap:44px;align-items:center}
-.ava{width:200px;height:200px;border-radius:50%;padding:4px;position:relative;background:var(--lime)}
-.ava div{width:100%;height:100%;border-radius:50%;background:rgba(5,18,48,.85);display:grid;place-items:center;
-  font-family:var(--display);font-weight:800;font-size:54px;letter-spacing:-.05em;color:var(--lime)}
-.ava::after{content:"";position:absolute;inset:-13px;border-radius:50%;border:1px dashed var(--stroke-2);animation:sp 26s linear infinite}
-@keyframes sp{to{transform:rotate(360deg)}}
-.about h2{font-size:clamp(25px,3.4vw,40px);font-weight:800;letter-spacing:-.04em;margin-bottom:14px}
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:center}
+.ava-card{position:relative;aspect-ratio:4/5;border-radius:30px;overflow:hidden;
+  background:radial-gradient(110% 80% at 20% 0%,#2B4BFF 0%,#1230D8 42%,#071B7E 100%);
+  border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 90px -40px rgba(10,40,200,.7)}
+.ava-card::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(60% 40% at 80% 100%,rgba(203,251,69,.22),transparent 70%),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 48px),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 48px)}
+.ava-card svg{position:absolute;left:50%;top:44%;width:78%;transform:translate(-46%,-50%);filter:drop-shadow(0 26px 40px rgba(2,8,60,.55))}
+.ava-tag{position:absolute;left:14px;right:14px;bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:14px 16px;border-radius:18px;background:rgba(6,14,40,.5);border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.ava-tag b{display:block;font-family:var(--display);font-size:16px;letter-spacing:-.02em}
+.ava-tag span{font-size:12px;color:var(--ink2)}
+.ava-tag em{font-style:normal;display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:9px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--on-lime);background:var(--lime);padding:7px 10px;border-radius:100px;white-space:nowrap}
+.ava-tag em i{width:6px;height:6px;border-radius:50%;background:var(--on-lime);animation:bl 1.7s infinite}
+.about .k{display:flex;align-items:center;gap:10px;color:var(--lime);margin-bottom:16px}
+.about .k::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.about h2{font-size:clamp(36px,5vw,68px);font-weight:700;letter-spacing:-.055em;line-height:.95;margin-bottom:24px}
+.about h2 em{font-style:normal;color:var(--lime)}
+.about .lead{font-size:clamp(17px,1.5vw,20px);color:#fff;line-height:1.55;max-width:620px}
 .about p{color:var(--ink2);max-width:600px}
-.about p+p{margin-top:11px}
-.about .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}
+.about p+p{margin-top:14px}
+.about .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
 .about .chips span{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
-  border:1px solid var(--stroke);background:var(--glass);padding:9px 13px;border-radius:100px;color:var(--ink2);transition:.24s}
+  border:1px solid var(--line-2);padding:10px 14px;border-radius:100px;color:var(--ink2);transition:.24s}
 .about .chips span:hover{border-color:var(--lime);color:var(--lime)}
-@media(max-width:820px){.about{grid-template-columns:1fr;gap:26px;justify-items:center;text-align:center}}
+@media(max-width:820px){.about{grid-template-columns:1fr}.ava-card{max-width:380px;width:100%;margin-inline:auto}}
 
 /* ═════ SHARHLAR ═════ */
-.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.rev{background:var(--glass);border:1px solid var(--stroke);border-radius:22px;padding:24px;backdrop-filter:blur(12px);
-  display:flex;flex-direction:column;gap:14px;transition:border-color .3s,transform .45s cubic-bezier(.19,1,.22,1)}
-.rev:hover{border-color:var(--lime);transform:translateY(-4px)}
-.rev .stars{color:var(--lime);letter-spacing:.1em;font-size:13px}
-.rev p{color:var(--ink2);font-size:14.5px}
-.who{display:flex;align-items:center;gap:11px;margin-top:auto}
-.who .av{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.6vw,22px)}
+.rev{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,2.6vw,34px);
+  display:flex;flex-direction:column;gap:22px;transition:border-color .3s,transform .5s cubic-bezier(.19,1,.22,1)}
+.rev:hover{border-color:var(--line-2);transform:translateY(-5px)}
+.rev::before{content:"\201C";font-family:var(--display);font-weight:800;font-size:84px;line-height:.6;color:var(--lime);height:34px}
+.rev .stars{position:absolute;top:clamp(24px,2.6vw,34px);right:clamp(24px,2.6vw,34px);color:var(--lime);letter-spacing:.12em;font-size:11px}
+.rev p{color:#fff;font-family:var(--display);font-weight:500;font-size:clamp(18px,1.6vw,21px);line-height:1.4;letter-spacing:-.02em}
+.who{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
+.who .av{width:40px;height:40px;border-radius:50%;flex:none;display:grid;place-items:center;
   font-family:var(--display);font-weight:700;font-size:15px;color:var(--on-lime);background:var(--lime)}
-.who b{display:block;font-size:13px}
-.who span span{font-size:11.5px;color:var(--ink3)}
+.who b{display:block;font-size:13.5px}
+.who span span{font-size:12px;color:var(--ink3)}
 @media(max-width:880px){.revs{grid-template-columns:1fr}}
 
 /* ═════ CTA ═════ */
 .cta{position:relative;text-align:center;overflow:hidden;margin:0 var(--edge);
-  border-radius:clamp(24px,3vw,42px);border:1px solid var(--stroke);
-  background:linear-gradient(160deg,#1668D8 0%,#0A3FA8 55%,#061530 100%)}
-.cta::before{content:"";position:absolute;left:50%;top:-55%;width:110vw;height:120vh;transform:translateX(-50%);
-  background:radial-gradient(closest-side,rgba(203,251,69,.16),transparent 70%);pointer-events:none}
-.cta .wrap{position:relative;display:flex;flex-direction:column;align-items:center;gap:20px}
-.cta h2{font-size:clamp(30px,6.4vw,76px);font-weight:800;letter-spacing:-.05em;line-height:.95;max-width:15ch}
+  border-radius:clamp(26px,3vw,44px);border:1px solid rgba(255,255,255,.16);
+  background:radial-gradient(120% 90% at 50% 0%,#3E97EC 0%,#1668D8 30%,#0A3FA8 62%,#071F5E 100%)}
+.cta::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 64px),
+             radial-gradient(50% 60% at 50% 110%,rgba(203,251,69,.28),transparent 70%)}
+.cta .wrap{position:relative;display:flex;flex-direction:column;align-items:center;gap:22px}
+.cta h2{font-size:clamp(46px,10vw,150px);font-weight:700;letter-spacing:-.065em;line-height:.88;max-width:12ch}
 .cta h2 em{font-style:normal;color:var(--lime)}
-.cta p{color:rgba(255,255,255,.86);max-width:430px}
+.cta p{color:rgba(255,255,255,.88);max-width:430px;font-size:16px}
 .cta .act{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+.mail{font-family:var(--display);font-weight:600;font-size:clamp(14px,4.2vw,26px);letter-spacing:-.03em;white-space:nowrap;
+  border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:4px;transition:color .25s,border-color .25s}
+.mail:hover{color:var(--lime);border-color:var(--lime)}
 
 /* ═════ FOOTER ═════ */
-.foot{padding:30px var(--edge) 40px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;
-  justify-content:space-between;color:var(--ink3);font-size:12.5px;margin-top:clamp(48px,6vw,80px);
-  border-top:1px solid var(--stroke)}
-.foot-l{display:flex;gap:16px;flex-wrap:wrap}
+.foot{padding:0 var(--edge) 34px;margin-top:clamp(56px,7vw,96px);color:var(--ink3);font-size:12.5px}
+.foot-big{font-family:var(--display);font-weight:800;font-size:clamp(28px,10.5vw,180px);letter-spacing:-.07em;line-height:.84;overflow:hidden;
+  text-align:center;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.2);
+  background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,0) 85%);-webkit-background-clip:text;background-clip:text;
+  padding-bottom:clamp(20px,3vw,40px);user-select:none}
+.foot-row{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;padding-top:24px;border-top:1px solid var(--line)}
+.foot-l{display:flex;gap:6px 20px;flex-wrap:wrap}
 .foot-l a:hover{color:var(--lime)}
-.top{position:fixed;right:20px;bottom:20px;z-index:250;width:44px;height:44px;border-radius:50%;
-  background:rgba(6,20,50,.8);border:1px solid var(--stroke-2);backdrop-filter:blur(10px);
+.social{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+.soc{display:inline-flex;align-items:center;gap:9px;padding:12px 18px 12px 14px;border-radius:100px;
+  background:rgba(6,14,40,.28);border:1px solid rgba(255,255,255,.22);color:#fff;backdrop-filter:blur(8px);
+  transition:background .25s,border-color .25s,transform .25s,color .25s}
+.soc span{font-weight:600;font-size:14px}
+.soc em{font-style:normal;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+a.soc:hover{border-color:#fff;background:#fff;color:#0A3FA8;transform:translateY(-2px)}
+.soon-soc{opacity:.6;cursor:default}
+.top{position:fixed;right:20px;bottom:20px;z-index:250;width:46px;height:46px;border-radius:50%;
+  background:rgba(6,14,34,.8);border:1px solid var(--line-2);backdrop-filter:blur(10px);
   display:grid;place-items:center;color:#fff;opacity:0;visibility:hidden;transition:.32s}
 .top.on{opacity:1;visibility:visible}
 .top:hover{background:var(--lime);color:var(--on-lime);border-color:var(--lime)}
@@ -388,18 +466,12 @@ img{display:block;max-width:100%}
 .lb-x{margin-left:auto;width:40px;height:40px;border-radius:50%;border:1px solid var(--stroke-2);
   display:grid;place-items:center;color:#fff;transition:.24s;flex:none}
 .lb-x:hover{background:var(--lime);color:var(--on-lime);border-color:var(--lime)}
-.lb-stage{flex:1;display:grid;place-items:center;padding:20px var(--edge);min-height:0;position:relative}
-.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:14px}
-.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;
-  background:rgba(6,20,50,.8);border:1px solid var(--stroke-2);display:grid;place-items:center;color:#fff;transition:.24s}
-.lb-nav:hover{background:var(--lime);color:var(--on-lime);border-color:var(--lime)}
-.lb-nav.p{left:calc(var(--edge) / 2)}
-.lb-nav.n{right:calc(var(--edge) / 2)}
-.lb-strip{display:flex;gap:8px;overflow-x:auto;padding:12px var(--edge) 18px;border-top:1px solid var(--stroke)}
-.lb-strip img{width:74px;height:56px;object-fit:cover;border-radius:8px;opacity:.4;cursor:pointer;
-  border:1px solid transparent;transition:.24s;flex:none}
-.lb-strip img.on{opacity:1;border-color:var(--lime)}
-.lb-desc{padding:0 var(--edge) 14px;color:var(--ink3);font-size:13px;max-width:70ch}
+.lb-head{display:flex;flex-direction:column;gap:2px;min-width:0}
+.lb-feed{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:22px var(--edge) 70px;display:flex;flex-direction:column;align-items:center;gap:16px}
+.lb-desc{width:min(100%,1100px);color:var(--ink2);font-size:14.5px;line-height:1.6}
+.lb-list{width:min(100%,1100px);display:flex;flex-direction:column;gap:16px}
+.lb-list img{width:100%;height:auto;display:block;border-radius:14px;background:rgba(255,255,255,.05)}
+.lb-back{margin-top:10px}
 
 /* ═════ REVEAL ═════ */
 .js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.19,1,.22,1),transform .8s cubic-bezier(.19,1,.22,1)}
@@ -436,7 +508,7 @@ img{display:block;max-width:100%}
       <a class="btn btn-o" href="#ishlarim">Ishlarimni ko‘rish</a>
       <a class="btn btn-p" href="#aloqa">Loyiha buyurtma qilish <i>&#8599;</i></a>
     </div>
-    <div class="collage"><div class="lane"><button class="cc shot-cc" style="width:214px;height:186px" data-proj="Ayol by CAU" aria-label="Ayol by CAU — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/37.jpg" alt="Ayol by CAU"><span class="l">Ayol by CAU · Brendbook</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="ZIVVO" aria-label="ZIVVO — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/42.jpg" alt="ZIVVO"><span class="l">ZIVVO · Flayer</span></button><button class="cc shot-cc" style="width:214px;height:198px" data-proj="UyBozor TV" aria-label="UyBozor TV — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/01.jpg" alt="UyBozor TV"><span class="l">UyBozor TV · Banner dizayn</span></button><button class="cc shot-cc" style="width:214px;height:162px" data-proj="Aurum" aria-label="Aurum — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/02.jpg" alt="Aurum"><span class="l">Aurum · SMM dizayn</span></button><div class="cc" style="width:196px;height:196px"><div class="k">45</div><img loading="lazy" decoding="async" src="img/03.jpg" alt=""><div class="l">Tayyor maket</div></div><button class="cc shot-cc" style="width:214px;height:186px" data-proj="AvtoMind" aria-label="AvtoMind — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/04.jpg" alt="AvtoMind"><span class="l">AvtoMind · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:150px" data-proj="SUN A" aria-label="SUN A — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/05.jpg" alt="SUN A"><span class="l">SUN A · Logotip va brending</span></button><div class="cc lime" style="width:198px;height:212px"><div class="k">10+</div><div class="tint"><img loading="lazy" decoding="async" src="img/06.jpg" alt=""></div><div class="l">Yakunlangan loyiha</div></div><button class="cc shot-cc" style="width:214px;height:206px" data-proj="American University" aria-label="American University — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/07.jpg" alt="American University"><span class="l">American University · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:168px" data-proj="Shaxsiy brend" aria-label="Shaxsiy brend — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/08.jpg" alt="Shaxsiy brend"><span class="l">Shaxsiy brend · Kreativ postlar</span></button><div class="cc dark" style="width:238px;height:178px"><span class="dot"></span><p>Logotip, brending,<br>post va karusel<br>dizayni</p></div><button class="cc shot-cc" style="width:214px;height:192px" data-proj="Samarkand Golden Chickpeas" aria-label="Samarkand Golden Chickpeas — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/09.jpg" alt="Samarkand Golden Chickpeas"><span class="l">Samarkand Golden Chickpeas · Oblojka dizayn</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="Dr Sherzod" aria-label="Dr Sherzod — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/10.jpg" alt="Dr Sherzod"><span class="l">Dr Sherzod · Oblojka dizayn</span></button><div class="cc" style="width:190px;height:204px"><div class="k">2 yil</div><img loading="lazy" decoding="async" src="img/11.jpg" alt=""><div class="l">Tajriba</div></div><div class="cc" style="width:184px;height:170px"><div class="k">5</div><img loading="lazy" decoding="async" src="img/12.jpg" alt=""><div class="l">Doimiy dastur</div></div></div><div class="lane" aria-hidden="true"><button class="cc shot-cc" style="width:214px;height:186px" data-proj="Ayol by CAU" aria-label="Ayol by CAU — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/37.jpg" alt="Ayol by CAU"><span class="l">Ayol by CAU · Brendbook</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="ZIVVO" aria-label="ZIVVO — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/42.jpg" alt="ZIVVO"><span class="l">ZIVVO · Flayer</span></button><button class="cc shot-cc" style="width:214px;height:198px" data-proj="UyBozor TV" aria-label="UyBozor TV — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/01.jpg" alt="UyBozor TV"><span class="l">UyBozor TV · Banner dizayn</span></button><button class="cc shot-cc" style="width:214px;height:162px" data-proj="Aurum" aria-label="Aurum — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/02.jpg" alt="Aurum"><span class="l">Aurum · SMM dizayn</span></button><div class="cc" style="width:196px;height:196px"><div class="k">45</div><img loading="lazy" decoding="async" src="img/03.jpg" alt=""><div class="l">Tayyor maket</div></div><button class="cc shot-cc" style="width:214px;height:186px" data-proj="AvtoMind" aria-label="AvtoMind — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/04.jpg" alt="AvtoMind"><span class="l">AvtoMind · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:150px" data-proj="SUN A" aria-label="SUN A — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/05.jpg" alt="SUN A"><span class="l">SUN A · Logotip va brending</span></button><div class="cc lime" style="width:198px;height:212px"><div class="k">10+</div><div class="tint"><img loading="lazy" decoding="async" src="img/06.jpg" alt=""></div><div class="l">Yakunlangan loyiha</div></div><button class="cc shot-cc" style="width:214px;height:206px" data-proj="American University" aria-label="American University — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/07.jpg" alt="American University"><span class="l">American University · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:168px" data-proj="Shaxsiy brend" aria-label="Shaxsiy brend — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/08.jpg" alt="Shaxsiy brend"><span class="l">Shaxsiy brend · Kreativ postlar</span></button><div class="cc dark" style="width:238px;height:178px"><span class="dot"></span><p>Logotip, brending,<br>post va karusel<br>dizayni</p></div><button class="cc shot-cc" style="width:214px;height:192px" data-proj="Samarkand Golden Chickpeas" aria-label="Samarkand Golden Chickpeas — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/09.jpg" alt="Samarkand Golden Chickpeas"><span class="l">Samarkand Golden Chickpeas · Oblojka dizayn</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="Dr Sherzod" aria-label="Dr Sherzod — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/10.jpg" alt="Dr Sherzod"><span class="l">Dr Sherzod · Oblojka dizayn</span></button><div class="cc" style="width:190px;height:204px"><div class="k">2 yil</div><img loading="lazy" decoding="async" src="img/11.jpg" alt=""><div class="l">Tajriba</div></div><div class="cc" style="width:184px;height:170px"><div class="k">5</div><img loading="lazy" decoding="async" src="img/12.jpg" alt=""><div class="l">Doimiy dastur</div></div></div></div>
+    <div class="collage"><div class="lane"><button class="cc shot-cc" style="width:214px;height:186px" data-proj="Ayol by CAU" aria-label="Ayol by CAU — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/37.jpg" alt="Ayol by CAU"><span class="l">Ayol by CAU · Brendbook</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="ZIVVO" aria-label="ZIVVO — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/42.jpg" alt="ZIVVO"><span class="l">ZIVVO · Flayer</span></button><button class="cc shot-cc" style="width:214px;height:198px" data-proj="UyBozor TV" aria-label="UyBozor TV — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/01.jpg" alt="UyBozor TV"><span class="l">UyBozor TV · Banner dizayn</span></button><button class="cc shot-cc" style="width:214px;height:162px" data-proj="Aurum" aria-label="Aurum — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/02.jpg" alt="Aurum"><span class="l">Aurum · SMM dizayn</span></button><div class="cc" style="width:196px;height:196px"><div class="k">45</div><img loading="lazy" decoding="async" src="img/03.jpg" alt=""><div class="l">Tayyor maket</div></div><button class="cc shot-cc" style="width:214px;height:186px" data-proj="AvtoMind" aria-label="AvtoMind — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/04.jpg" alt="AvtoMind"><span class="l">AvtoMind · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:150px" data-proj="SUN A" aria-label="SUN A — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/05.jpg" alt="SUN A"><span class="l">SUN A · Logotip va brending</span></button><div class="cc" style="width:198px;height:212px"><div class="k">12+</div><img loading="lazy" decoding="async" src="img/06.jpg" alt=""><div class="l">Yakunlangan loyiha</div></div><button class="cc shot-cc" style="width:214px;height:206px" data-proj="American University" aria-label="American University — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/07.jpg" alt="American University"><span class="l">American University · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:168px" data-proj="Shaxsiy brend" aria-label="Shaxsiy brend — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/08.jpg" alt="Shaxsiy brend"><span class="l">Shaxsiy brend · Kreativ postlar</span></button><div class="cc" style="width:214px;height:178px"><div class="k">Logo · Post</div><img loading="lazy" decoding="async" src="img/19.jpg" alt=""><div class="l">Brending va SMM</div></div><button class="cc shot-cc" style="width:214px;height:192px" data-proj="Samarkand Golden Chickpeas" aria-label="Samarkand Golden Chickpeas — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/09.jpg" alt="Samarkand Golden Chickpeas"><span class="l">Samarkand Golden Chickpeas · Oblojka dizayn</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="Dr Sherzod" aria-label="Dr Sherzod — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/10.jpg" alt="Dr Sherzod"><span class="l">Dr Sherzod · Oblojka dizayn</span></button><div class="cc" style="width:190px;height:204px"><div class="k">1 yil</div><img loading="lazy" decoding="async" src="img/11.jpg" alt=""><div class="l">Tajriba</div></div><div class="cc" style="width:184px;height:170px"><div class="k">5</div><img loading="lazy" decoding="async" src="img/12.jpg" alt=""><div class="l">Doimiy dastur</div></div></div><div class="lane" aria-hidden="true"><button class="cc shot-cc" style="width:214px;height:186px" data-proj="Ayol by CAU" aria-label="Ayol by CAU — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/37.jpg" alt="Ayol by CAU"><span class="l">Ayol by CAU · Brendbook</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="ZIVVO" aria-label="ZIVVO — ishlarni ko&#8216;rish"><img loading="lazy" decoding="async" src="img/42.jpg" alt="ZIVVO"><span class="l">ZIVVO · Flayer</span></button><button class="cc shot-cc" style="width:214px;height:198px" data-proj="UyBozor TV" aria-label="UyBozor TV — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/01.jpg" alt="UyBozor TV"><span class="l">UyBozor TV · Banner dizayn</span></button><button class="cc shot-cc" style="width:214px;height:162px" data-proj="Aurum" aria-label="Aurum — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/02.jpg" alt="Aurum"><span class="l">Aurum · SMM dizayn</span></button><div class="cc" style="width:196px;height:196px"><div class="k">45</div><img loading="lazy" decoding="async" src="img/03.jpg" alt=""><div class="l">Tayyor maket</div></div><button class="cc shot-cc" style="width:214px;height:186px" data-proj="AvtoMind" aria-label="AvtoMind — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/04.jpg" alt="AvtoMind"><span class="l">AvtoMind · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:150px" data-proj="SUN A" aria-label="SUN A — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/05.jpg" alt="SUN A"><span class="l">SUN A · Logotip va brending</span></button><div class="cc" style="width:198px;height:212px"><div class="k">12+</div><img loading="lazy" decoding="async" src="img/06.jpg" alt=""><div class="l">Yakunlangan loyiha</div></div><button class="cc shot-cc" style="width:214px;height:206px" data-proj="American University" aria-label="American University — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/07.jpg" alt="American University"><span class="l">American University · Logotip va brending</span></button><button class="cc shot-cc" style="width:214px;height:168px" data-proj="Shaxsiy brend" aria-label="Shaxsiy brend — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/08.jpg" alt="Shaxsiy brend"><span class="l">Shaxsiy brend · Kreativ postlar</span></button><div class="cc" style="width:214px;height:178px"><div class="k">Logo · Post</div><img loading="lazy" decoding="async" src="img/19.jpg" alt=""><div class="l">Brending va SMM</div></div><button class="cc shot-cc" style="width:214px;height:192px" data-proj="Samarkand Golden Chickpeas" aria-label="Samarkand Golden Chickpeas — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/09.jpg" alt="Samarkand Golden Chickpeas"><span class="l">Samarkand Golden Chickpeas · Oblojka dizayn</span></button><button class="cc shot-cc" style="width:214px;height:158px" data-proj="Dr Sherzod" aria-label="Dr Sherzod — ishlarni ko‘rish"><img loading="lazy" decoding="async" src="img/10.jpg" alt="Dr Sherzod"><span class="l">Dr Sherzod · Oblojka dizayn</span></button><div class="cc" style="width:190px;height:204px"><div class="k">1 yil</div><img loading="lazy" decoding="async" src="img/11.jpg" alt=""><div class="l">Tajriba</div></div><div class="cc" style="width:184px;height:170px"><div class="k">5</div><img loading="lazy" decoding="async" src="img/12.jpg" alt=""><div class="l">Doimiy dastur</div></div></div></div>
     <div class="hero-clients">
       <b>Ular bilan ishladim:</b>
       <span>UyBozor TV · Aurum · AvtoMind · Ayol by CAU · ZIVVO · SUN A · American University</span>
@@ -446,13 +518,15 @@ img{display:block;max-width:100%}
 
 <!-- ═════ STATS ═════ -->
 <section class="stats">
-  <div class="wrap">
+  <div class="wrap"><div class="st-row">
     <div class="stat rv"><div class="n" data-to="12" data-suf="+">0</div><div class="l">Yakunlangan loyiha</div></div>
     <div class="stat rv"><div class="n" data-to="45" data-suf="">0</div><div class="l">Tayyor maket</div></div>
-    <div class="stat rv"><div class="n" data-to="2" data-suf=" yil">0</div><div class="l">Dizayn bilan ish tajribasi</div></div>
+    <div class="stat rv"><div class="n" data-to="1" data-suf=" yil">0</div><div class="l">Dizayn bilan ish tajribasi</div></div>
     <div class="stat rv"><div class="n" data-to="5" data-suf="">0</div><div class="l">Doimiy dastur</div></div>
-  </div>
+  </div></div>
 </section>
+
+<div class="ticker" aria-hidden="true"><div class="tr"><span>Logotip <b>&#10022;</b></span><span>Brending <b>&#10022;</b></span><span>SMM dizayn <b>&#10022;</b></span><span>Banner <b>&#10022;</b></span><span>Oblojka <b>&#10022;</b></span><span>Montaj <b>&#10022;</b></span><span>Motion <b>&#10022;</b></span><span>Logotip <b>&#10022;</b></span><span>Brending <b>&#10022;</b></span><span>SMM dizayn <b>&#10022;</b></span><span>Banner <b>&#10022;</b></span><span>Oblojka <b>&#10022;</b></span><span>Montaj <b>&#10022;</b></span><span>Motion <b>&#10022;</b></span></div></div>
 
 <!-- ═════ ISHLARIM ═════ -->
 <section class="sec" id="ishlarim">
@@ -466,7 +540,7 @@ img{display:block;max-width:100%}
     </div>
     <div class="filters rv"><button data-f="all" class="on">Hammasi</button><button data-f="brending">Brending</button><button data-f="smm">SMM</button><button data-f="banner">Banner</button><button data-f="oblojka">Oblojka</button></div>
     <div class="grid" id="grid">
-      <article class="card" data-cat="banner" data-title="UyBozor TV"
+      <article class="card wide" data-cat="banner" data-title="UyBozor TV"
                data-kind="Banner dizayn" data-desc="Play Market va App Store uchun ilova bannerlari — ekran ko‘rinishlari, sarlavhalar va bir xil vizual uslub." tabindex="0">
         <div class="shot">
           <img src="img/01.jpg" alt="UyBozor TV" loading="lazy">
@@ -586,7 +660,7 @@ img{display:block;max-width:100%}
         </div>
         <template><img src="img/08.jpg" alt="Shaxsiy brend — 1-rasm" loading="lazy"><img src="img/28.jpg" alt="Shaxsiy brend — 2-rasm" loading="lazy"><img src="img/29.jpg" alt="Shaxsiy brend — 3-rasm" loading="lazy"><img src="img/11.jpg" alt="Shaxsiy brend — 4-rasm" loading="lazy"><img src="img/30.jpg" alt="Shaxsiy brend — 5-rasm" loading="lazy"><img src="img/31.jpg" alt="Shaxsiy brend — 6-rasm" loading="lazy"><img src="img/32.jpg" alt="Shaxsiy brend — 7-rasm" loading="lazy"><img src="img/33.jpg" alt="Shaxsiy brend — 8-rasm" loading="lazy"></template>
       </article>
-      <article class="card" data-cat="oblojka" data-title="Samarkand Golden Chickpeas"
+      <article class="card wide" data-cat="oblojka" data-title="Samarkand Golden Chickpeas"
                data-kind="Oblojka dizayn" data-desc="Instagram uchun oblojkalar — mahsulot va tadbirkorlik mavzusidagi seriya, yagona rang uslubida." tabindex="0">
         <div class="shot">
           <img src="img/09.jpg" alt="Samarkand Golden Chickpeas" loading="lazy">
@@ -619,56 +693,43 @@ img{display:block;max-width:100%}
   </div>
 </section>
 
-<!-- ═════ MONTAJ — SOON ═════ -->
+<!-- ═════ MONTAJ VA MOTION ═════ -->
 <section class="sec" id="montaj" style="padding-top:0">
   <div class="wrap">
-    <div class="soon rv">
-      <span class="k mono" style="display:inline-flex;align-items:center;gap:10px;color:var(--ink3)">02 / Portfolio</span>
-      <div style="margin-top:14px"><span class="strike"><h2>Video montaj</h2></span></div>
-      <div class="stamp"><i></i>Soon</div>
-      <p>Bu bo‘lim tayyorlanmoqda. Birinchi montaj ishlari tez kunda shu yerda paydo bo‘ladi.</p>
+    <div class="head rv">
+      <div><span class="k mono">02 / Video</span><h2>Montaj va motion</h2></div>
+      <p>Video montaj va motion grafika ishlarim alohida Telegram kanallarda — videolarni o‘sha yerda ko‘rishingiz mumkin.</p>
+    </div>
+    <div class="mo">
+      <a class="mo-card lime rv" target="_blank" rel="noopener" href="https://t.me/FIN_PORTOFOLIO2">
+        <div class="mo-top"><span class="mono">Telegram kanal</span><span class="mo-play"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+        <div><h3>Montaj portfolio</h3><p>Video montaj ishlarim — bitta kanalda.</p></div>
+        <span class="mo-go">Kanalni ochish <i>&#8599;</i></span>
+      </a>
+      <a class="mo-card blue rv" target="_blank" rel="noopener" href="https://t.me/FIN_MOTION">
+        <div class="mo-top"><span class="mono">Telegram kanal</span><span class="mo-play"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span></div>
+        <div><h3>Motion kanal</h3><p>Motion grafika va animatsiya ishlarim.</p></div>
+        <span class="mo-go">Kanalni ochish <i>&#8599;</i></span>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- ═════ XIZMATLAR ═════ -->
 <section class="sec" id="xizmatlar" style="padding-top:0">
-  <div class="wrap">
-    <div class="head rv">
-      <div><span class="k mono">Xizmatlar</span><h2>Nima qila olaman</h2></div>
+  <div class="wrap svc-wrap">
+    <div class="svc-side rv">
+      <span class="k mono">03 / Xizmatlar</span><h2>Nima qila olaman</h2>
       <p>Bitta brif — bosma va raqamli formatlar uchun tayyor fayllar.</p>
+      <a class="btn btn-p" href="#aloqa">Buyurtma berish <i>&#8599;</i></a>
     </div>
     <div class="svcs">
-        <div class="svc">
-          <span class="n">01</span>
-          <h3>Logotip va brending</h3>
-          <p>Logotip, rang palitrasi va uni real materialda qo‘llash maketlari.</p>
-        </div>
-        <div class="svc">
-          <span class="n">02</span>
-          <h3>Post dizayn</h3>
-          <p>Instagram uchun post seriyalari — yagona uslub va tayyor shablonlar.</p>
-        </div>
-        <div class="svc">
-          <span class="n">03</span>
-          <h3>Karusel dizayn</h3>
-          <p>Ko‘p varaqli karusel postlar — birinchi varaqdan oxirgisiga bir xil ritm.</p>
-        </div>
-        <div class="svc">
-          <span class="n">04</span>
-          <h3>Banner dizayn</h3>
-          <p>Play Market, App Store, sayt va tashqi reklama uchun bannerlar.</p>
-        </div>
-        <div class="svc">
-          <span class="n">05</span>
-          <h3>Aktual oblojka</h3>
-          <p>Instagram aktual (highlight) va video oblojkalari — bitta to‘plamda.</p>
-        </div>
-        <div class="svc">
-          <span class="n">06</span>
-          <h3>SMM vizual paket</h3>
-          <p>Oylik post, storiy va aktual to‘plami — brend uslubida.</p>
-        </div></div>
+        <div class="svc"><span class="n">01</span><div><h3>Logotip va brending</h3><p>Logotip, rang palitrasi va uni real materialda qo‘llash maketlari.</p></div><i>&#8599;</i></div>
+        <div class="svc"><span class="n">02</span><div><h3>Post dizayn</h3><p>Instagram uchun post seriyalari — yagona uslub va tayyor shablonlar.</p></div><i>&#8599;</i></div>
+        <div class="svc"><span class="n">03</span><div><h3>Karusel dizayn</h3><p>Ko‘p varaqli karusel postlar — birinchi varaqdan oxirgisiga bir xil ritm.</p></div><i>&#8599;</i></div>
+        <div class="svc"><span class="n">04</span><div><h3>Banner dizayn</h3><p>Play Market, App Store, sayt va tashqi reklama uchun bannerlar.</p></div><i>&#8599;</i></div>
+        <div class="svc"><span class="n">05</span><div><h3>Aktual oblojka</h3><p>Instagram aktual (highlight) va video oblojkalari — bitta to‘plamda.</p></div><i>&#8599;</i></div>
+        <div class="svc"><span class="n">06</span><div><h3>SMM vizual paket</h3><p>Oylik post, storiy va aktual to‘plami — brend uslubida.</p></div><i>&#8599;</i></div></div>
   </div>
 </section>
 
@@ -676,12 +737,13 @@ img{display:block;max-width:100%}
 <section class="sec" id="about" style="padding-top:0">
   <div class="wrap">
     <div class="about rv">
-      <div class="ava"><div>BX</div></div>
+      <div class="ava-card" role="img" aria-label="FIN logotipi — Bexruz Xasanboyev"><svg viewBox="0 0 512 512"><g transform="translate(256,256) scale(0.62) translate(-406.15,-390.55)" fill="#FFFFFF" fill-rule="evenodd"><path d="M202.4,589.0C203.7,587.6 206.5,582.7 208.5,578.0C210.6,573.3 213.8,566.1 215.7,562.0C217.6,557.9 221.1,550.2 223.5,545.0C225.9,539.8 228.9,533.0 230.3,530.0C231.7,527.0 238.2,512.6 244.8,498.0C251.4,483.4 258.1,468.6 259.7,465.0C261.4,461.4 264.0,455.8 265.5,452.5C267.0,449.2 270.0,442.4 272.2,437.5C277.5,425.4 278.9,422.3 288.0,402.5C292.3,393.1 297.9,380.8 300.5,375.0C303.1,369.2 306.5,361.6 308.2,358.0C309.9,354.4 315.0,342.9 319.7,332.5C334.4,299.4 335.7,297.2 343.4,289.4C347.3,285.5 352.8,281.1 355.6,279.7C367.1,273.9 364.2,274.0 483.3,274.0C602.0,274.0 596.9,274.2 612.4,268.3C631.3,261.2 649.4,242.9 658.0,222.3C661.9,213.2 664.9,200.5 665.0,193.8L665.0,189.0L498.2,189.0C400.5,189.0 329.2,189.4 325.8,189.9C322.7,190.4 317.1,192.1 313.4,193.6C295.3,200.8 282.1,213.7 273.4,232.6C271.4,236.9 268.6,243.0 267.2,246.0C263.8,253.4 255.7,271.3 244.8,295.5C239.8,306.5 234.2,318.8 232.4,322.8C230.5,326.9 229.0,330.3 229.0,330.5C229.0,330.6 227.0,335.0 224.6,340.1C220.5,348.8 213.6,364.1 208.8,375.0C207.7,377.5 205.8,381.8 204.5,384.5C203.2,387.2 198.7,397.1 194.5,406.5C190.2,415.9 185.8,425.8 184.5,428.5C176.9,444.9 171.0,458.1 171.0,458.5C171.0,458.7 169.2,462.6 167.1,467.2C156.4,490.1 150.6,503.8 149.3,509.8C147.3,519.2 147.3,535.9 149.4,544.5C152.9,559.1 161.1,572.1 173.3,582.9C181.8,590.3 186.0,592.1 193.8,591.7C198.9,591.5 200.5,590.9 202.4,589.0Z M492.5,422.9C507.1,420.0 513.5,417.6 523.5,411.1C538.6,401.3 550.3,386.0 556.3,368.0C558.5,361.4 560.2,351.9 559.8,348.5L559.5,345.5L476.5,345.2C404.2,345.0 392.2,345.1 383.7,346.5C367.2,349.2 354.8,355.5 343.7,366.7C333.9,376.6 329.4,383.9 324.2,398.1C321.8,404.5 319.4,420.0 320.3,422.4C320.9,423.9 328.9,424.0 404.2,424.0C455.1,423.9 489.4,423.5 492.5,422.9Z"/></g></svg><div class="ava-tag"><span><b>Bexruz Xasanboyev</b><span>Qo‘qon, O‘zbekiston</span></span><em><i></i>Ochiq</em></div></div>
       <div>
-        <span class="k mono" style="display:flex;align-items:center;gap:10px;color:var(--ink3);margin-bottom:12px">Men haqimda</span>
-        <h2>Grafik dizayner, Qo‘qon</h2>
-        <p>Men Bexruz — Farg‘ona viloyati, Qo‘qon shahrida ishlaydigan grafik dizayner. Logotip va brendingdan Instagram postlari, ilova bannerlari va oblojkalargacha — brendingizning vizual tilini bir xil uslubda olib boraman.</p>
+        <span class="k mono">04 / Men haqimda</span>
+        <h2>Designer &amp; <em>Motion</em> Creator</h2>
+        <p class="lead">Men Bexruz — Farg‘ona viloyati, Qo‘qon shahri (Dang‘ara tumani)dan grafik dizayner va motion creator. Logotip va brendingdan Instagram post, karusel, banner va oblojkalargacha — brendingizning vizual tilini bir xil uslubda olib boraman. Video montaj va motion grafika bilan ham shug‘ullanaman.</p>
         <p>Ishda sun’iy intellekt vositalaridan ham faol foydalanaman: g‘oya va variantlarni tez sinab ko‘rish uchun. Yakuniy maketni esa har doim o‘zim yig‘aman.</p>
+        <p>Hamkorlik uchun boshqa viloyatlar va chet davlatlarga ham borishga tayyorman.</p>
         <div class="chips"><span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>Premiere Pro</span><span>After Effects</span></div>
       </div>
     </div>
@@ -691,21 +753,21 @@ img{display:block;max-width:100%}
 <!-- ═════ SHARHLAR ═════ -->
 <section class="sec" style="padding-top:0">
   <div class="wrap">
-    <div class="head rv"><div><span class="k mono">Sharhlar</span><h2>Mijozlar nima deydi</h2></div></div>
+    <div class="head rv"><div><span class="k mono">05 / Sharhlar</span><h2>Mijozlar nima deydi</h2></div></div>
     <div class="revs">
         <article class="rev">
           <span class="stars">★★★★★</span>
-          <p>“Srochni post kerak bo‘lgan edi — rahmat sizga, joyida qilib berdingiz.”</p>
+          <p>Srochni post kerak bo‘lgan edi — rahmat sizga, joyida qilib berdingiz.</p>
           <div class="who"><span class="av">A</span><span><b>AURUM</b><span>Uy-joy savdosi</span></span></div>
         </article>
         <article class="rev">
           <span class="stars">★★★★★</span>
-          <p>“Play Market va App Store uchun qilingan dizaynlar tufayli foydalanuvchilar ancha ko‘paydi. Rahmat.”</p>
+          <p>Play Market va App Store uchun qilingan dizaynlar tufayli foydalanuvchilar ancha ko‘paydi. Rahmat.</p>
           <div class="who"><span class="av">U</span><span><b>UyBozor TV</b><span>Ilova</span></span></div>
         </article>
         <article class="rev">
           <span class="stars">★★★★★</span>
-          <p>“Sun A logotipi uchun katta rahmat.”</p>
+          <p>Sun A logotipi uchun katta rahmat.</p>
           <div class="who"><span class="av">S</span><span><b>SUN A</b><span>Brend</span></span></div>
         </article></div>
   </div>
@@ -719,19 +781,31 @@ img{display:block;max-width:100%}
     <p>G‘oyangizni yozing — muddat va narx bo‘yicha tez javob beraman.</p>
     <div class="act">
       <a class="btn btn-p" target="_blank" rel="noopener" href="https://t.me/FIN_BEXRUZ">Telegram <i>&#8599;</i></a>
-      <a class="btn btn-o" target="_blank" rel="noopener" href="https://t.me/FIN_PORTOFOLIO">Telegram kanalim</a>
-      <a class="btn btn-o" target="_blank" rel="noopener" href="mailto:behruzbekhasanboyev31@gmail.com">Email yozish</a>
+      <a class="btn btn-o" target="_blank" rel="noopener" href="https://t.me/FIN_PORTOFOLIO">Dizayn kanali</a>
+    </div>
+    <a class="mail" href="mailto:behruzbekhasanboyev31@gmail.com">behruzbekhasanboyev31@gmail.com</a>
+    <div class="social">
+      <a class="soc" target="_blank" rel="noopener" href="https://www.instagram.com/fin.motionn/"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+      <a class="soc" target="_blank" rel="noopener" href="https://t.me/FIN_PEREXADNIK"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.9L18 5.8c.4-.3-.1-.5-.6-.2L7 12.1 2.4 10.7c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.3 2z"/></svg><span>Telegram</span></a>
+      <span class="soc soon-soc" aria-disabled="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3L10 15z"/></svg><span>YouTube</span><em>Tez orada</em></span>
     </div>
   </div>
 </section>
 
 <footer class="foot">
+  <div class="foot-big" aria-hidden="true">FIN PORTOFOLIO</div>
+  <div class="foot-row">
   <span>© 2026 FIN PORTOFOLIO · Bexruz Xasanboyev · Qo‘qon</span>
   <div class="foot-l">
     <a href="#ishlarim">Ishlarim</a>
     <a href="#xizmatlar">Xizmatlar</a>
     <a href="#about">Men haqimda</a>
-    <a href="https://t.me/FIN_PORTOFOLIO" target="_blank" rel="noopener">Telegram kanal</a>
+    <a href="https://t.me/FIN_PORTOFOLIO" target="_blank" rel="noopener">Dizayn kanali</a>
+    <a href="https://t.me/FIN_PORTOFOLIO2" target="_blank" rel="noopener">Montaj kanali</a>
+    <a href="https://www.instagram.com/fin.motionn/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://t.me/FIN_PEREXADNIK" target="_blank" rel="noopener">Telegram</a>
+    <span title="Tez orada">YouTube · tez orada</span>
+  </div>
   </div>
 </footer>
 
@@ -739,25 +813,19 @@ img{display:block;max-width:100%}
   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
-<!-- ═════ LIGHTBOX ═════ -->
-<div class="lb" id="lb" role="dialog" aria-modal="true">
+<!-- ═════ LOYIHA OYNASI — rasmlar to‘liq ═════ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
   <div class="lb-top">
-    <h3 id="lbTitle">—</h3><span class="mono" id="lbKind">—</span>
+    <div class="lb-head"><h3 id="lbTitle">—</h3><span class="mono" id="lbKind">—</span></div>
     <button class="lb-x" id="lbX" aria-label="Yopish">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
   </div>
-  <div class="lb-stage">
-    <button class="lb-nav p" id="lbP" aria-label="Oldingi">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
-    </button>
-    <img loading="lazy" decoding="async" id="lbImg" alt="">
-    <button class="lb-nav n" id="lbN" aria-label="Keyingi">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
-    </button>
+  <div class="lb-feed" id="lbFeed">
+    <p class="lb-desc" id="lbDesc"></p>
+    <div class="lb-list" id="lbList"></div>
+    <button class="btn btn-o lb-back" id="lbBack" type="button">Yopish</button>
   </div>
-  <p class="lb-desc" id="lbDesc"></p>
-  <div class="lb-strip" id="lbStrip"></div>
 </div>
 
 <script>
@@ -798,7 +866,7 @@ var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   })();
 
   document.addEventListener('mouseover', function(e){
-    ring.classList.toggle('big', !!e.target.closest('a,button,.card,.shot-cc,.chips span,.filters button'));
+    ring.classList.toggle('big', !!e.target.closest('a,button,.card,.shot-cc,.chips span,.filters button,.svc'));
   });
 
   addEventListener('click', function(e){
@@ -841,19 +909,19 @@ var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   });
   function up(el){
     var to = +el.dataset.to, suf = el.dataset.suf || '', t0 = null;
-    (function s(ts){
+    requestAnimationFrame(function s(ts){
       if (!t0) t0 = ts;
       var p = Math.min((ts - t0) / 1400, 1), e = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(to * e) + suf;
+      el.innerHTML = Math.round(to * e) + (suf ? '<span>' + suf + '</span>' : '');
       if (p < 1) requestAnimationFrame(s);
-    })();
+    });
   }
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){
       if (!e.isIntersecting) return;
       e.target.classList.add('in');
       var n = e.target.querySelector('[data-to]');
-      if (n) { if (reduce) n.textContent = n.dataset.to + (n.dataset.suf || ''); else up(n); }
+      if (n) { if (reduce) n.innerHTML = n.dataset.to + (n.dataset.suf ? '<span>' + n.dataset.suf + '</span>' : ''); else up(n); }
       io.unobserve(e.target);
     });
   }, { rootMargin: '0px 0px -6% 0px', threshold: .08 });
@@ -877,30 +945,25 @@ var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ── lightbox galereya ── */
 (function(){
-  var lb = document.getElementById('lb'), img = document.getElementById('lbImg'),
-      strip = document.getElementById('lbStrip'), title = document.getElementById('lbTitle'),
-      kind = document.getElementById('lbKind'), desc = document.getElementById('lbDesc'),
-      list = [], idx = 0, last = null;
+  var lb = document.getElementById('lb'), feed = document.getElementById('lbFeed'),
+      listBox = document.getElementById('lbList'), title = document.getElementById('lbTitle'),
+      kind = document.getElementById('lbKind'), desc = document.getElementById('lbDesc'), last = null;
 
-  function show(i){
-    if (!list.length) return;
-    idx = (i + list.length) % list.length;
-    img.src = list[idx];
-    strip.querySelectorAll('img').forEach(function(t, k){ t.classList.toggle('on', k === idx); });
-  }
   function open(card){
     last = document.activeElement;
-    list = [].slice.call(card.querySelector('template').content.querySelectorAll('img')).map(function(i){ return i.src; });
+    var srcs = [].slice.call(card.querySelector('template').content.querySelectorAll('img'))
+                 .map(function(i){ return i.getAttribute('src'); });
     title.textContent = card.dataset.title;
-    kind.textContent = card.dataset.kind + ' · ' + list.length + ' ta maket';
+    kind.textContent = card.dataset.kind + ' · ' + srcs.length + ' ta maket';
     desc.textContent = card.dataset.desc;
-    strip.innerHTML = '';
-    list.forEach(function(s, k){
-      var t = document.createElement('img'); t.src = s; t.alt = '';
-      t.addEventListener('click', function(){ show(k); });
-      strip.appendChild(t);
+    listBox.innerHTML = '';
+    srcs.forEach(function(s, k){
+      var im = document.createElement('img');
+      im.src = s; im.alt = card.dataset.title + ' — ' + (k + 1) + '-maket';
+      im.loading = k < 2 ? 'eager' : 'lazy'; im.decoding = 'async';
+      listBox.appendChild(im);
     });
-    show(0);
+    feed.scrollTop = 0;
     lb.classList.add('on');
     document.body.style.overflow = 'hidden';
     document.getElementById('lbX').focus();
@@ -912,13 +975,25 @@ var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     c.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(c); } });
   });
   document.getElementById('lbX').addEventListener('click', close);
-  document.getElementById('lbP').addEventListener('click', function(){ show(idx - 1); });
-  document.getElementById('lbN').addEventListener('click', function(){ show(idx + 1); });
+  document.getElementById('lbBack').addEventListener('click', close);
   addEventListener('keydown', function(e){
-    if (!lb.classList.contains('on')) return;
-    if (e.key === 'Escape') close();
-    if (e.key === 'ArrowLeft') show(idx - 1);
-    if (e.key === 'ArrowRight') show(idx + 1);
+    if (lb.classList.contains('on') && e.key === 'Escape') close();
+  });
+
+  /* keng kartalar: 4 tagacha maket yonma-yon */
+  document.querySelectorAll('.card.wide').forEach(function(c){
+    var sh = c.querySelector('.shot'), t = c.querySelector('template'); if (!sh || !t) return;
+    var box = document.createElement('div'); box.className = 'trio';
+    [].slice.call(t.content.querySelectorAll('img'), 0, 4).forEach(function(i){
+      var im = document.createElement('img'); im.src = i.getAttribute('src'); im.alt = ''; im.decoding = 'async';
+      box.appendChild(im);
+    });
+    sh.insertBefore(box, sh.querySelector('img').nextSibling);
+  });
+  /* kartadagi rasm orqasiga o‘zining xira foni */
+  document.querySelectorAll('.shot').forEach(function(sh){
+    var i = sh.querySelector('img');
+    if (i) sh.style.backgroundImage = 'url("' + i.getAttribute('src') + '")';
   });
 })();
 
