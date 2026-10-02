@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bexruz410247.github.io/sitemap.xml
+Sitemap: https://finportofolio.github.io/sitemap.xml
